@@ -16,7 +16,7 @@ const newUser = (e) => {
         const data = acessData()
         console.log(data)
     
-        const url = "https://teste-lista-de-tarefas-tera.herokuapp.com/user"
+        const url = "https://lista-de-tarefas-tera.herokuapp.com/user"
     
         if(!data) {
             return

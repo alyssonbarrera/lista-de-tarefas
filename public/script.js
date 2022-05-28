@@ -14,7 +14,7 @@ const novaTarefa = (e) => {
     const data = acessData()
     console.log(data)
 
-    const url = "https://teste-lista-de-tarefas-tera.herokuapp.com/tasks"
+    const url = "https://lista-de-tarefas-tera.herokuapp.com/tasks"
 
     if(!data) {
         return
@@ -52,7 +52,7 @@ const acessData2 = (message) => {
 }
 
 const mostrarTarefas = () => {
-    fetch("https://teste-lista-de-tarefas-tera.herokuapp.com/tasks")
+    fetch("https://lista-de-tarefas-tera.herokuapp.com/tasks")
     .then((response) => {
         return response.json()
         .then((data) => {
@@ -99,7 +99,7 @@ const deletarTarefa = (e) => {
     const data = acessData2(e)
     console.log(data)
 
-    const url = "https://teste-lista-de-tarefas-tera.herokuapp.com/tasks"
+    const url = "https://lista-de-tarefas-tera.herokuapp.com/tasks"
 
     if(!data) {
         return
@@ -126,7 +126,7 @@ const concluirTarefa = (e) => {
     const data = acessData2(e)
     console.log(data)
 
-    const url = "https://teste-lista-de-tarefas-tera.herokuapp.com/tasks"
+    const url = "https://lista-de-tarefas-tera.herokuapp.com/tasks"
 
     if(!data) {
         return
