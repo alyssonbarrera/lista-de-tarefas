@@ -1,0 +1,54 @@
+<!-- PARTE 1 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="/public/assets/imagens/favicon.ico">
+    <link rel="stylesheet" href="/public/assets/style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <!-- PARTE 2 -->
+    <header>
+        <img src="../public/assets/imagens/logo.svg" width="70px" height="auto" alt="">
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <!-- PARTE 3 -->
+    <main class="container">
+        <div class="div-container">
+            <h2>Sobre a Lista de Tarefas</h2>
+            <p>O intuito desta página é que os usuários possam adicionar ou remover tarefas que ficarão armazenadas numa lista, e poderão marcá-las como concluída</p>
+            <p>Para adicionar a primeira tarefa vá até <b>Tarefas</b></p>
+        </div>
+    </main>
+    <section class="container">
+        <div class="div-container">
+            <h3>Faça login</h3>
+            <div class="loginForm">
+                <% if (messages.error) { %>
+                    <p><%= messages.error %></p>
+                  <% } %>
+                            <form action="/" method="post">
+                    <div class="inputsLogin">            
+                        <label for="username">Nome de usuário</label>
+                        <input id="inputUsernameLogin" name="username" type="text" required>
+        
+                        <label for="senha">Senha</label>
+                        <input type="password" name="password" id="inputPasswordLogin" required>    
+                    </div>
+                    <div class="buttonLogin">
+                        <label for="entrar"></label>
+                        <button type="submit" id="loginButton">Entrar</button>    
+                    </div>
+                    <div class="signUp">
+                        <a href="/signUp">Não tem uma conta? <b>Registre-se</b></a>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </section>    
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    margin-top: auto;
+}
+
+
+nav {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+nav a {
+    margin: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    width: 750px;
+    background-color: #F6F6F9;
+    background-color: white;
+}
+
+main section {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-container {
+    width: 750px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #F6F6F9;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2rem;
+
+}
+
+section h2 {
+    font-size: 1.9rem;
+    margin-top: 0;
+
+}
+
+.main2 {
+    width: 100%;
+}
+
+#novaTarefa {
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.novaTarefa2 {
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    background-color: #F6F6F9;
+    width: 550px;
+    margin-right: 10%;
+    margin-left: 10%;
+
+
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.main2 #novaTarefa .novaTarefa2 #inputNovaTarefa {
+    display: flex;
+    flex-basis: 100%;
+    font-family: Lato, sans-serif;
+    padding: 0px 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0CCBDE;
+    
+}
+
+.button {
+    background-image: url(../assets/imagens/icon.svg);
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-check {
+    background-image: url(../assets/imagens/check.svg);
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+li div {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#btnNovaTarefa {
+    display: flex;
+    width: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 0;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #0CCBDE;
+
+}
+
+#btnNovaTarefa:hover {
+    transform: scale(1.1);
+}
+
+#listaDeTarefas {
+    margin: 0;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.listaDeTarefas {
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    background-color: #F6F6F9;
+    width: 550px;
+    margin-right: 10%;
+    margin-left: 10%;
+
+
+}
+
+#listaDeTarefas ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
+#listaDeTarefas li {
+    list-style: none;
+    padding: 20px 10px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word;
+    gap: 1rem;
+}
+
+#listaDeTarefas li:last-child {
+    margin-bottom: 0;
+}
+
+#listaDeTarefas li:hover {
+    background-color: #0CCBDE;
+    color: #ffffff;
+}
+
+.aberta {
+    text-decoration: none;
+  }
+  
+.concluída {
+    text-decoration: line-through;
+  }
+
+ .loginForm form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     
+     margin-bottom: 2rem;
+ }
+
+ .inputsLogin {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     width: 80%;
+ }
+
+ .inputsLogin #email{
+    margin-right: 1rem;
+ }
+
+ .inputsLogin input {
+     border: none;
+     border-radius: 0.6rem;
+     background-color: white;
+     outline: none;
+
+     display: block;
+     width: 100%;
+     height: 3rem;
+     
+     font-size: 1.4rem;
+ }
+
+ .buttonLogin button {
+     border: none;
+     width: 10rem;
+     height: 3rem;
+     border-radius: 0.6rem;
+
+     margin-top: 1rem;
+
+     background-color: white;
+     cursor: pointer;
+
+     font-size: 1.4rem;
+     font-weight: bold;
+
+ }
+
+.signUp a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.signUp a > b {
+    color: #0babb9
+}
