@@ -34,7 +34,7 @@ const newUser = (e) => {
                 credentials: "same-origin"
             })
             .then((response) => {
-                // window.location.href = "/tarefas"
+                window.location.href = "/tarefas"
             })
             .catch((e) => {
                 return console.error(e)
