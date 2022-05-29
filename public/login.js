@@ -15,7 +15,7 @@ const newUser = (e) => {
 
         const data = acessData()
     
-        const url = "https://lista-de-tarefas-tera.herokuapp.com/user"
+        const url = "http://localhost:3000/user"
     
         if(!data) {
             return

@@ -12,20 +12,18 @@ const createUser = async (req, res) => {
         if(userExists) {
             res.statusMessage = "Email e/ou username já cadastrados"
             res.status(422).json({message: "Email e/ou username já cadastrados"})
-            }
-        
-
+        }
+    
         if(password != confirmPassword) {
             res.statusMessage = "As senhas não conferem"
             res.status(422).json({message: "As senhas não conferem"})
-            }
+        }
         
         else {
             res.statusMessage = "Usuário cadastrado com sucesso!"
             res.status(200).json({message: "Usuário cadastrado com sucesso"})
         }
         
-
         const newUser = new userSchema({
             name,
             username,
