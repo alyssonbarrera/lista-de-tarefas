@@ -15,7 +15,7 @@ const newUser = (e) => {
 
         const data = acessData()
     
-        const url = "http://localhost:3000/user"
+        const url = "https://lista-de-tarefas-tera.herokuapp.com/user"
     
         if(!data) {
             return
@@ -24,6 +24,7 @@ const newUser = (e) => {
             alert('As senhas não conferem')
         }
         if(userPassword == userConfirmPassword) {
+            
             fetch(`${url}/signUp`, {
                 method: 'POST',
                 body: JSON.stringify(data),
@@ -32,12 +33,14 @@ const newUser = (e) => {
                 },
                 credentials: "same-origin"
             })
+
             .then((response) => {
                 alert(response.statusText)
                 if(response.status == 200) {
                     window.location.href = "/tarefas"
                 }
             })
+
             .catch((e) => {
                 return console.error(e)
             })
