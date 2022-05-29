@@ -29,9 +29,6 @@
         <div class="loginForm">
             <form action="/signUp" method="post">
                 <div class="inputsLogin">
-                    <% if (messages.error) { %>
-                        <p><%= messages.error %></p>
-                      <% } %>    
                     <label for="nome">Nome</label>
                     <input name="name" type="text" id="inputNome" required="true" require>
 

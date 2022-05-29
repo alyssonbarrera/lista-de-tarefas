@@ -14,7 +14,6 @@ const newUser = (e) => {
         e.preventDefault(e);
 
         const data = acessData()
-        console.log(data)
     
         const url = "https://lista-de-tarefas-tera.herokuapp.com/user"
     
@@ -34,7 +33,10 @@ const newUser = (e) => {
                 credentials: "same-origin"
             })
             .then((response) => {
-                window.location.href = "/tarefas"
+                alert(response.statusText)
+                if(response.status == 200) {
+                    window.location.href = "/tarefas"
+                }
             })
             .catch((e) => {
                 return console.error(e)

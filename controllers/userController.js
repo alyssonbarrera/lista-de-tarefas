@@ -10,16 +10,21 @@ const createUser = async (req, res) => {
         const userExists = await userSchema.findOne({username: username})
 
         if(userExists) {
-            return res.status(422).json({
-                message: 'email e/ou username já cadastrados'
-            })
-        }
+            res.statusMessage = "Email e/ou username já cadastrados"
+            res.status(422).json({message: "Email e/ou username já cadastrados"})
+            }
+        
 
         if(password != confirmPassword) {
-            return res.status(422).json({ 
-                message: "As senhas não conferem"
-            })
+            res.statusMessage = "As senhas não conferem"
+            res.status(422).json({message: "As senhas não conferem"})
+            }
+        
+        else {
+            res.statusMessage = "Usuário cadastrado com sucesso!"
+            res.status(200).json({message: "Usuário cadastrado com sucesso"})
         }
+        
 
         const newUser = new userSchema({
             name,
@@ -36,9 +41,7 @@ const createUser = async (req, res) => {
         })
 
     } catch (error) {
-        res.status(500).json({
-            message: error.message
-        })
+        res.status(500)
     }
 }
 
