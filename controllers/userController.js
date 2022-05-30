@@ -10,8 +10,8 @@ const createUser = async (req, res) => {
         const userExists = await userSchema.findOne({username: username})
 
         if(userExists) {
-            res.statusMessage = "Email e/ou username já cadastrados"
-            res.status(422).json({message: "Email e/ou username já cadastrados"})
+            res.statusMessage = "Email e/ou nome de usuário já cadastrados"
+            res.status(422).json({message: "Email e/ou nome de usuário já cadastrados"})
         }
     
         if(password != confirmPassword) {

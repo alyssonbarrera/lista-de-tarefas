@@ -10,7 +10,9 @@ const newUser = (e) => {
     const userPassword = document.querySelector('#inputSenha').value
     const userConfirmPassword = document.querySelector('#inputConfirmPassword').value
 
-    if(userName && userUsername && userEmail && userPassword && userConfirmPassword) {
+    console.log(userName.length)
+
+    if(userName && userUsername && userEmail && userPassword.length >= 4 && userConfirmPassword.length >= 4) {
         e.preventDefault(e);
 
         const data = acessData()
@@ -51,8 +53,8 @@ const newUser = (e) => {
 const acessData = () => {
     return {
         "name": document.querySelector('#inputNome').value,
-        "username": document.querySelector('#inputUsername').value,
-        "email": document.querySelector('#inputEmail').value,
+        "username": document.querySelector('#inputUsername').value.toLowerCase(),
+        "email": document.querySelector('#inputEmail').value.toLowerCase(),
         "password": document.querySelector('#inputSenha').value,
         "confirmPassword": document.querySelector('#inputConfirmPassword').value
     }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de Tarefas onde o usuário cadastrado pode adicionar e remover tarefas, bem como acessá-las em qualquer lugar">
     <link rel="icon"  href="/public/assets/imagens/favicon.ico">
     <link rel="stylesheet" href="/public/assets/style.css">
     <title>Lista de Tarefas</title>
@@ -12,7 +13,7 @@
 <body>
     <!-- PARTE 2 -->
     <header>
-        <img src="../public/assets/imagens/logo.svg" width="70px" height="auto" alt="">
+        <img src="../public/assets/imagens/logo.svg" width="70px" height="auto" alt="Logo da Lista de Tarefas">
         <h1>Lista de Tarefas</h1>
     </header>
 
@@ -30,26 +31,25 @@
             <form action="/signUp" method="post">
                 <div class="inputsLogin">
                     <label for="nome">Nome</label>
-                    <input name="name" type="text" id="inputNome" required="true" require>
+                    <input name="name" type="text" id="inputNome" required="true" aria-label="Digitar nome" require>
 
                     <label for="username">Nome de usuário</label>
-                    <input name="username" id="inputUsername" type="text" required>
+                    <input name="username" id="inputUsername" type="text" aria-label="Digitar nome de usuário" required>
                     
                     <label for="email">Email</label>
-                    <input  name="email" id="inputEmail" type="email" required>
+                    <input  name="email" id="inputEmail" type="email" aria-label="Digitar email" required>
     
                     <label for="senha">Senha</label>
-                    <input name="password" type="password" id="inputSenha" required>  
+                    <input name="password" type="password" id="inputSenha" aria-label="Digitar senha" minlength="4" required>  
 
                     <label for="senha">Confirmação de senha</label>
-                    <input name="confirmPassword" type="password" id="inputConfirmPassword" required> 
+                    <input name="confirmPassword" type="password" id="inputConfirmPassword" aria-label="Digitar senha novamente" minlength="4" required> 
                 </div>
                 <div class="buttonLogin">
-                    <label for="entrar"></label>
-                    <button type="submit" id="signUpButton">Registar</button>    
+                    <button type="submit" id="signUpButton" aria-label="Criar conta">Registar</button>    
                 </div>
                 <div class="signUp">
-                    <a href="/">Já possui uma conta? <b>Faça login</b></a>
+                    <p>Já possui uma conta? <a href="/"><b>Faça login</b></a></p>
                 </div>
             </form>
         </div>
