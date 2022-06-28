@@ -18,6 +18,9 @@ With front-end built on HTML/EJS, CSS, and JavaScript, back-end in Node with Exp
   <img width="600px" src="./assets/print-1.jpeg" alt="Print da página de login" />
   <img width="600px" src="./assets/print-2.jpeg" alt="Print da página de tarefas" />
 </div>
+
+## Video
+https://user-images.githubusercontent.com/86618257/176065475-86cfb731-f211-422a-a615-ca15e3b9b308.mp4
   
 ## Stack
 
